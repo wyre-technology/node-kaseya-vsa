@@ -1,3 +1,10 @@
+# 1.0.0 (2026-04-30)
+
+
+### Features
+
+* initial SDK scaffold for Kaseya VSA REST API ([79506ad](https://github.com/wyre-technology/node-kaseya-vsa/commit/79506ad04f83b45be735e7411498419b0dac5597))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
