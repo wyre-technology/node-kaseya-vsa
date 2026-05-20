@@ -220,7 +220,10 @@ export class HttpClient {
         throw new KaseyaVsaNotFoundError('Resource not found', responseBody);
       case 429: {
         const retryAfterHeader = response.headers.get('retry-after');
-        const retryAfterSeconds = retryAfterHeader ? parseInt(retryAfterHeader, 10) : undefined;
+        const retryAfterSeconds =
+          retryAfterHeader != null && retryAfterHeader !== ''
+            ? parseInt(retryAfterHeader, 10)
+            : undefined;
         if (this.rateLimiter.shouldRetry(retryCount)) {
           const delay = this.rateLimiter.calculateRetryDelay(retryCount, retryAfterSeconds);
           await this.sleep(delay);
@@ -266,7 +269,7 @@ export class HttpClient {
    */
   private unwrapEnvelope<T>(envelope: VsaEnvelope<T>): T {
     if (
-      envelope &&
+      envelope != null &&
       typeof envelope === 'object' &&
       ('ResponseCode' in envelope || 'Result' in envelope || 'Error' in envelope)
     ) {

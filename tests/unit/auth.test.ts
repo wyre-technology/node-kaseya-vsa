@@ -155,7 +155,7 @@ describe('AuthManager — Kaseya One SSO', () => {
     const auth = new AuthManager(config);
     expect(await auth.getToken()).toBe('sso-1');
     expect(captured).toHaveBeenCalledOnce();
-    const req = captured.mock.calls[0]![0];
+    const [req] = captured.mock.calls[0]! as [Request];
     expect(req.headers.get('authorization')).toBe('Bearer k1-token');
   });
 });

@@ -87,7 +87,7 @@ function parseAuthEnvelope(envelope: AuthEnvelope, now: number): {
   }
   const result = envelope.Result;
   const token = result?.Token;
-  if (!token) {
+  if (token == null || token === '') {
     throw new KaseyaVsaAuthenticationError(
       'Authentication response did not include a Token',
       401,
@@ -137,7 +137,7 @@ export class AuthManager {
    * Concurrent callers share a single in-flight refresh.
    */
   async getToken(): Promise<string> {
-    if (this.token && this.now() < this.expiresAt - REFRESH_LEEWAY_MS) {
+    if (this.token != null && this.now() < this.expiresAt - REFRESH_LEEWAY_MS) {
       return this.token;
     }
     return this.refresh();
@@ -157,7 +157,7 @@ export class AuthManager {
       })
       .finally(() => {
         this.inflight = null;
-      }) as Promise<string>;
+      });
     return this.inflight;
   }
 
@@ -168,10 +168,15 @@ export class AuthManager {
   }
 
   private async doRefresh(): Promise<string> {
-    if (this.config.kaseyaOneToken) {
+    if (this.config.kaseyaOneToken != null && this.config.kaseyaOneToken !== '') {
       return this.refreshSso(this.config.kaseyaOneToken);
     }
-    if (!this.config.username || !this.config.password) {
+    if (
+      this.config.username == null ||
+      this.config.username === '' ||
+      this.config.password == null ||
+      this.config.password === ''
+    ) {
       throw new KaseyaVsaAuthenticationError(
         'No credentials configured for authentication'
       );
