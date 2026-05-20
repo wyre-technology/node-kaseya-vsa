@@ -157,7 +157,7 @@ export class AuthManager {
       })
       .finally(() => {
         this.inflight = null;
-      }) as Promise<string>;
+      });
     return this.inflight;
   }
 
