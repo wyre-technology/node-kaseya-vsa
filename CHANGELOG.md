@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/wyre-technology/node-kaseya-vsa/compare/v1.0.0...v1.0.1) (2026-05-20)
+
+
+### Bug Fixes
+
+* critical packaging exports resolution + lint/CI hardening ([#2](https://github.com/wyre-technology/node-kaseya-vsa/issues/2)) ([63fb3ce](https://github.com/wyre-technology/node-kaseya-vsa/commit/63fb3ce7247736606efe63d2e1450d033a01baa7))
+
 # 1.0.0 (2026-04-30)
 
 
