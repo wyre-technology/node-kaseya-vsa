@@ -4,9 +4,9 @@ Node.js/TypeScript SDK for the Kaseya VSA REST API.
 
 ## Project info
 
-- **GitHub**: https://github.com/wyre-technology/node-kaseya-vsa
-- **Package**: `@wyre-technology/node-kaseya-vsa` (GitHub Packages)
-- **Sister SDKs**: [`node-datto-bcdr`](https://github.com/wyre-technology/node-datto-bcdr), [`node-datto-rmm`](https://github.com/wyre-technology/node-datto-rmm)
+- **GitHub**: https://github.com/WYRE-AI/node-kaseya-vsa
+- **Package**: `@wyre-ai/node-kaseya-vsa` (GitHub Packages)
+- **Sister SDKs**: [`node-datto-bcdr`](https://github.com/WYRE-AI/node-datto-bcdr), [`node-datto-rmm`](https://github.com/WYRE-AI/node-datto-rmm)
 
 ## Architecture
 

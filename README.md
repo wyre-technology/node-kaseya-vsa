@@ -1,4 +1,4 @@
-# @wyre-technology/node-kaseya-vsa
+# @wyre-ai/node-kaseya-vsa
 
 Comprehensive, fully-typed Node.js / TypeScript client library for the
 Kaseya VSA REST API.
@@ -19,14 +19,14 @@ Kaseya VSA REST API.
 ## Install
 
 ```bash
-npm install @wyre-technology/node-kaseya-vsa
+npm install @wyre-ai/node-kaseya-vsa
 ```
 
-The package is published to GitHub Packages under the `@wyre-technology` scope.
+The package is published to GitHub Packages under the `@wyre-ai` scope.
 Add this to a project-local `.npmrc`:
 
 ```
-@wyre-technology:registry=https://npm.pkg.github.com
+@wyre-ai:registry=https://npm.pkg.github.com
 ```
 
 ## Quick start
@@ -36,7 +36,7 @@ VSA is per-tenant: each MSP has a private base URL such as
 provide the `baseUrl`.
 
 ```typescript
-import { KaseyaVsaClient } from '@wyre-technology/node-kaseya-vsa';
+import { KaseyaVsaClient } from '@wyre-ai/node-kaseya-vsa';
 
 // Local user (legacy) auth
 const client = new KaseyaVsaClient({
@@ -148,7 +148,7 @@ import {
   KaseyaVsaNotFoundError,
   KaseyaVsaRateLimitError,
   KaseyaVsaServerError,
-} from '@wyre-technology/node-kaseya-vsa';
+} from '@wyre-ai/node-kaseya-vsa';
 
 try {
   await client.agents.get('123');

@@ -21,7 +21,7 @@ import { MachineGroupsResource } from './resources/machine-groups.js';
  *
  * @example
  * ```typescript
- * import { KaseyaVsaClient } from '@wyre-technology/node-kaseya-vsa';
+ * import { KaseyaVsaClient } from '@wyre-ai/node-kaseya-vsa';
  *
  * const client = new KaseyaVsaClient({
  *   baseUrl: 'https://vsa.example.com/api/v1.0',
