@@ -5,7 +5,7 @@ Thanks for your interest in contributing to `node-kaseya-vsa`.
 ## Development setup
 
 ```bash
-git clone https://github.com/wyre-technology/node-kaseya-vsa.git
+git clone https://github.com/WYRE-AI/node-kaseya-vsa.git
 cd node-kaseya-vsa
 npm install
 npm test

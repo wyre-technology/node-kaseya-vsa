@@ -1,5 +1,5 @@
 {
-  "name": "@wyre-technology/node-kaseya-vsa",
+  "name": "@wyre-ai/node-kaseya-vsa",
   "version": "1.0.1",
   "type": "module",
   "publishConfig": {
@@ -53,12 +53,12 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wyre-technology/node-kaseya-vsa.git"
+    "url": "git+https://github.com/WYRE-AI/node-kaseya-vsa.git"
   },
   "bugs": {
-    "url": "https://github.com/wyre-technology/node-kaseya-vsa/issues"
+    "url": "https://github.com/WYRE-AI/node-kaseya-vsa/issues"
   },
-  "homepage": "https://github.com/wyre-technology/node-kaseya-vsa#readme",
+  "homepage": "https://github.com/WYRE-AI/node-kaseya-vsa#readme",
   "engines": {
     "node": ">=22.0.0"
   },

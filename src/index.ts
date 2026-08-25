@@ -1,5 +1,5 @@
 /**
- * @wyre-technology/node-kaseya-vsa
+ * @wyre-ai/node-kaseya-vsa
  *
  * Comprehensive, fully-typed Node.js/TypeScript library for the Kaseya VSA
  * REST API.
