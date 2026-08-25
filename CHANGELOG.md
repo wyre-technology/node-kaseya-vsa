@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/WYRE-AI/node-kaseya-vsa/compare/v1.0.1...v1.0.2) (2026-08-25)
+
+
+### Bug Fixes
+
+* migrate to WYRE-AI org (npm scope, ghcr namespace, registry) ([#47](https://github.com/WYRE-AI/node-kaseya-vsa/issues/47)) ([f0314b7](https://github.com/WYRE-AI/node-kaseya-vsa/commit/f0314b7057ae9eb0b6a11fcb2e8cc665c3bf32c5))
+
 ## [1.0.1](https://github.com/wyre-technology/node-kaseya-vsa/compare/v1.0.0...v1.0.1) (2026-05-20)
 
 
